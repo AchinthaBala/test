@@ -28,5 +28,5 @@ jobs:
     - name: login server part2
       run:  >
         ssh ${{ secrets.MY_USER}}@${{ secrets.MY_SER  }}  "
-        cd  /root/website
+        cd  /root/website &&
         touch testfile.txt"
