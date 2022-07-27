@@ -18,6 +18,7 @@ jobs:
   build and deploy:
     steps:
     - name: log in to the server
+      uses: actions/checkout@v3
       with:
         host: 192.168.1.105
         username: root
