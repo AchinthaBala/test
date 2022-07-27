@@ -21,9 +21,9 @@ jobs:
     - name: log in to the server
       uses: easingthemes/ssh-deploy@main
       with:
-        host: ${{ secrets.MY_SER  }}
-        username: ${{ secrets.MY_USER}}
-        key:  ${{ secrets.KEY}}
+        REMOTE_HOST: ${{ secrets.MY_SER  }}
+        REMOTE_USER: ${{ secrets.MY_USER}}
+        SSH_PRIVATE_KEY:  ${{ secrets.KEY}}
 
     # - name: login server part2
     #   run:  >
