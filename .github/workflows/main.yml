@@ -20,7 +20,7 @@ jobs:
     steps:
     - name: log in to the server
       uses: easingthemes/ssh-deploy@main
-      with:
+      env:
         REMOTE_HOST: ${{ secrets.MY_SER  }}
         REMOTE_USER: ${{ secrets.MY_USER}}
         SSH_PRIVATE_KEY:  ${{ secrets.KEY}}
