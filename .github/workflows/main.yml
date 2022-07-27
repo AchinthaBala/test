@@ -23,6 +23,7 @@ jobs:
       with:
         host: ${{ secrets.MY_SER  }}
         username: ${{ secrets.MY_USER}}
+        key:  ${{ secrets.KEY}}
         password: ${{ secrets.MY_PASS}}
 
     - name: login server part2
