@@ -24,4 +24,9 @@ jobs:
         host: ${{ secrets.MY_SER  }}
         username: ${{ secrets.MY_USER}}
         password: ${{ secrets.MY_PASS}}
-        script: pwd
+
+    - name: login server part2
+      run:  >
+        ssh ${{ secrets.MY_USER}}@${{ secrets.MY_SER  }}  "
+        cd  /root/website
+        touch testfile.txt"
