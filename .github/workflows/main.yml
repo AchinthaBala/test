@@ -21,7 +21,7 @@ jobs:
     - name: log in to the server
       uses: actions/checkout@v3
       with:
-        host: 192.168.1.105
-        username: root
-        password: 123
+        host: ${{ secrets.MY_SER  }}
+        username: ${{ secrets.MY_USER}}
+        password: ${{ secrets.MY_PASS}}
         script: pwd
